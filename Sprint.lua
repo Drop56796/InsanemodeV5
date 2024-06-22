@@ -1,158 +1,47 @@
--- Gui to Lua
-
-
--- Version: 3.2
-
-
-
--- Instances:
-
-
 local runService = game:GetService("RunService")
-
-
-
 local character = game.Players.LocalPlayer.Character
-
-
 local humanoid = character:WaitForChild("Humanoid")
-
-
-
 local StaminaBar = Instance.new("ScreenGui")
-
-
 local Border = Instance.new("Frame")
-
-
 local Bar = Instance.new("Frame")
-
-
 local SideBar = Instance.new("Frame")
-
-
 local Bar_2 = Instance.new("Frame")
-
-
-
---Properties:
-
-
-
 StaminaBar.Name = "StaminaBar"
-
-
 StaminaBar.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
-
 StaminaBar.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-
-
 Border.Name = "Border"
-
-
 Border.Parent = StaminaBar
-
-
 Border.AnchorPoint = Vector2.new(0, 1)
-
-
 Border.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-
-
 Border.BorderColor3 = Color3.fromRGB(0, 0, 0)
-
-
 Border.BorderSizePixel = 4
-
-
 Border.Position = UDim2.new(0.25, 0, 0.85, 0)
-
-
 Border.Size = UDim2.new(0.6, 0, 0.0263093561, 0)
-
-
-
 Bar.Name = "Bar"
-
-
 Bar.Parent = Border
-
-
 Bar.AnchorPoint = Vector2.new(0, 1)
-
-
 Bar.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
-
-
 Bar.BorderColor3 = Color3.fromRGB(0, 0, 0)
-
-
 Bar.BorderSizePixel = 0
-
-
 Bar.Position = UDim2.new(0, 0, 1, 0)
-
-
 Bar.Size = UDim2.new(1, 0, 1, 0)
-
-
-
 SideBar.Name = "SideBar"
-
-
 SideBar.Parent = StaminaBar
-
-
 SideBar.AnchorPoint = Vector2.new(0, 1)
-
-
 SideBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-
-
 SideBar.BorderColor3 = Color3.fromRGB(0, 0, 0)
-
-
 SideBar.BorderSizePixel = 4
-
-
 SideBar.Position = UDim2.new(0.985890269, 0, 1, 0)
-
-
 SideBar.Size = UDim2.new(0.0141097549, 0, 0.17468825, 0)
-
-
-
 Bar_2.Name = "Bar"
-
-
 Bar_2.Parent = SideBar
-
-
 Bar_2.AnchorPoint = Vector2.new(0, 1)
-
-
 Bar_2.BackgroundColor3 = Color3.fromRGB(255, 255, 0)
-
-
 Bar_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-
-
 Bar_2.BorderSizePixel = 0
-
-
 Bar_2.Position = UDim2.new(0, 0, 1, 0)
-
-
 Bar_2.Size = UDim2.new(1, 0, 1, 0)
-
-
 local Started=false
-
-
--- Scripts:
-
 
 local OO = 0
 
