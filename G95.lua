@@ -143,6 +143,13 @@ entity:SetCallback("OnDespawning", function()
 end)
 
 entity:SetCallback("OnDespawned", function()
+    local cue2 = Instance.new("Sound")
+	cue2.Parent = game.Workspace
+	cue2.Name = "Sound"
+	cue2.SoundId = "rbxassetid://1837829565"
+	cue2.Volume = 10
+	cue2.PlaybackSpeed = 0.8
+	cue2:Play()
     wait(2.5)
     ---====== Load achievement giver ======---
 local achievementGiver = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Utilities/main/Doors/Custom%20Achievements/Source.lua"))()
