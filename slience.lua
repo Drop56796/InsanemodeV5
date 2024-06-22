@@ -15,7 +15,7 @@ local entity = spawner.Create({
 	Entity = {
 		Name = "e",
 		Asset = "https://github.com/Drop56796/Decoratebance/blob/main/Dread.rbxm?raw=true",
-		HeightOffset = 0
+		HeightOffset = 99999
 	},
 	Lights = {
 		Flicker = {
@@ -44,7 +44,7 @@ local entity = spawner.Create({
 	},
 	Damage = {
 		Enabled = true,
-		Range = 37,
+		Range = 99999999999,
 		Amount = 100
 	},
 	Crucifixion = {
@@ -55,8 +55,8 @@ local entity = spawner.Create({
 	},
 	Death = {
 		Type = "Guiding", -- "Curious"
-		Hints = {"You died to Dread", "How", "JUST HIDE..", "..", "...", "YOU will escape..."},
-		Cause = "Dread"
+		Hints = {"You died to slience", "How", "JUST HIDE..", "..", "...", "YOU will escape..."},
+		Cause = "slience"
 	}
 })
 
